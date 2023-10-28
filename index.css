@@ -1,0 +1,48 @@
+/*font for heading of BestOffers section*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap");
+
+body {
+  background-color: #242b2e;
+  color: white;
+  /**/
+  /**/
+  /**/
+  margin-top: 10%;
+}
+
+.sectionHeading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+}
+
+ul {
+  list-style: none;
+  /*padding: auto;*/
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  flex-wrap: wrap;
+  margin: 0.7vw;
+}
+
+ul li img {
+  height: 15vw;
+  width: 23vw;
+  border-radius: 4%;
+}
+
+@media screen and (max-width: 576px) {
+  .sectionHeading {
+    font-size: 2vw;
+    margin-bottom: -2vw;
+  }
+  ul li {
+    margin: 0.7vw;
+  }
+  ul li img {
+    height: 15vw;
+    width: 22vw;
+  }
+}
