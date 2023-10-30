@@ -15,7 +15,7 @@ body {
   font-size: 2vw;
 }
 
-ul {
+.listOfOffers {
   list-style: none;
   /*padding: auto;*/
   padding: 0;
@@ -26,13 +26,26 @@ ul li {
   display: inline-block;
   flex-wrap: wrap;
   margin: 0.9vw;
-  width: 20%;
+  width: 22%;
 }
 
 ul li img {
   height: 15vw;
-  width: 100%;
+  width: 100% !important;
   border-radius: 4%;
+}
+
+@media screen and (max-width: 768px) {
+  .sectionHeading {
+    font-size: 2vw;
+    margin-bottom: -2vw;
+  }
+  ul li {
+    margin: 0.7vw;
+  }
+  ul li img {
+    height: 15vw;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -45,7 +58,6 @@ ul li img {
   }
   ul li img {
     height: 15vw;
-    width: 22vw;
   }
 }
 
