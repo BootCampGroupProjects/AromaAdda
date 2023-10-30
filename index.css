@@ -11,7 +11,8 @@ body {
   margin-top: 10%;
 }
 .sectionHead {
-  margin-bottom: 3.3%;
+  margin-top: 3.3%;
+  margin-bottom: 3.1%;
 }
 .sectionHeading {
   /*font-family: "Montserrat", "sans-serif";*/
@@ -40,7 +41,7 @@ body {
   margin-left: -47%;
 }
 
-#bestOffers h2 {
+.sectionHead h2 {
   width: 50%;
   display: inline;
 }
@@ -93,11 +94,11 @@ ul li img {
 }
 
 /* Contact us section  */
-.contact_us {
+#contactUs {
   margin: 10px;
-  display: flex;
-  flex-direction: row;
-  border: 1px solid black;
+  /* display: flex;
+  flex-direction: row; */
+  /* border: 1px solid black; */
 }
 .contact_us ul {
   margin: 5vw;
@@ -119,25 +120,17 @@ ul li img {
   color: grey;
 }
 #contact-container {
-  display: flex;
-  flex-direction: row;
   color: white;
   width: 80vw;
   margin: 5vw;
 }
-#heading span {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 4%;
-  font-size: 18px;
-  font-family: "Arial";
-  color: white;
+
+#form{
+  width:60%;
+  margin-right:40px;
+
 }
 
-#form {
-  width: 40%;
-  margin-right: 40px;
-}
 #contact-detail input,
 textarea {
   background: inherit;
