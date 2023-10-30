@@ -6,14 +6,31 @@
     <title>Aroma Adda</title>
 
     <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!--Navigation part-->
 
     <!--Best Offer part -> Abhinav -->
 
-    <section>
-      <h2 class="sectionHeading">Best offers for you</h2>
+    <section id="bestOffers">
+      <div class="sectionHead">
+        <hr class="sectionHeadingLeftLine" />
+        <i
+          class="fa-solid fa-circle sectionHeadingLeftCircle"
+          style="color: #ffffff"
+        ></i>
+        <h2 class="sectionHeading">Best offers for you</h2>
+        <hr class="sectionHeadingRightLine" />
+        <i
+          class="fa-solid fa-circle sectionHeadingRightCircle"
+          style="color: #ffffff"
+        ></i>
+      </div>
+
       <ul class="listOfOffers">
         <li>
           <a href="#Offer1"><img src="./assets/bestOffers/Offer1.png" /></a>
@@ -28,7 +45,7 @@
           <a href="#Offer4"><img src="./assets/bestOffers/Offer4.png" /></a>
         </li>
         <li>
-          <a href="#Offer1"><img src="./assets/bestOffers/Offer1.png" /></a>
+          <a href="#Offer4"><img src="./assets/bestOffers/Offer4.png" /></a>
         </li>
         <li>
           <a href="#Offer2"><img src="./assets/bestOffers/Offer2.png" /></a>
@@ -37,7 +54,7 @@
           <a href="#Offer3"><img src="./assets/bestOffers/Offer3.png" /></a>
         </li>
         <li>
-          <a href="#Offer4"><img src="./assets/bestOffers/Offer4.png" /></a>
+          <a href="#Offer1"><img src="./assets/bestOffers/Offer1.png" /></a>
         </li>
       </ul>
     </section>
@@ -82,14 +99,13 @@
         <div id="form">
           <div id="heading"><span>Suggestion</span></div>
           <form id="contact-detail">
-
-              <input type="text" placeholder="Your Name">
-              <hr>
-              <input type="email" placeholder="Your Email">
-              <hr>
-              <textarea name="Message"placeholder="Message"></textarea>
-              <hr>
-              <button type="submit">SEND MESSAGE</button>
+            <input type="text" placeholder="Your Name" />
+            <hr />
+            <input type="email" placeholder="Your Email" />
+            <hr />
+            <textarea name="Message" placeholder="Message"></textarea>
+            <hr />
+            <button type="submit">SEND MESSAGE</button>
 
             <input type="text" placeholder="Your Name" />
             <hr />
