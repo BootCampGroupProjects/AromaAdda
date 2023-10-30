@@ -11,7 +11,7 @@ body {
 }
 
 .sectionHeading {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "sans-serif";
   font-size: 2vw;
 }
 
@@ -45,4 +45,67 @@ ul li img {
     height: 15vw;
     width: 22vw;
   }
+}
+
+
+/* Contact us section  */
+.contact_us{
+  margin: 10px;
+  display: flex;
+  flex-direction: row; 
+  border: 1px solid black;
+}
+.contact_us ul{
+  margin: 5vw;
+
+}
+.contact_us ul li{
+  display:flex;
+  flex-direction: column;
+  width:10vw;
+}
+.c1{
+  font-size: 18px ;
+  font-family:"Arial" ;
+  color: white;
+}
+.c2 a{
+  text-decoration: none;
+}
+.c2_1{
+  color:grey;
+  
+}
+#contact-container {
+  display:flex;
+  flex-direction: row;
+  color:white;
+  width:80vw;
+  margin:5vw;
+}
+#heading span{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4%;
+  font-size: 18px ;
+  font-family:"Arial" ;
+  color: white;
+
+  
+}
+
+#form{
+  width:40%;
+  margin-right:40px;
+}
+#contact-detail input, textarea{
+  background:inherit;
+  border:none;
+}
+#contact-detail button{
+  background:inherit;
+  color:white;
+  padding:10px;
+  border-color:white;
+margin-left: 30%;
 }
