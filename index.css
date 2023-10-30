@@ -50,23 +50,24 @@ ul li img {
 }
 
 /* Contact us section  */
-.contact_us {
+.contact_us{
   margin: 10px;
   display: flex;
   flex-direction: row;
   border: 1px solid black;
 }
-.contact_us ul {
+.contact_us ul{
   margin: 5vw;
+
 }
 .contact_us ul li {
   display: flex;
   flex-direction: column;
   width: 10vw;
 }
-.c1 {
-  font-size: 18px;
-  font-family: "Arial";
+.c1{
+  font-size: 18px ;
+  font-family:"Arial" ;
   color: white;
 }
 .c2 a {
@@ -78,32 +79,32 @@ ul li img {
 #contact-container {
   display: flex;
   flex-direction: row;
-  color: white;
-  width: 80vw;
-  margin: 5vw;
+  color:white;
+  width:80vw;
+  margin:5vw;
 }
 #heading span {
   display: flex;
   flex-direction: column;
   margin-bottom: 4%;
-  font-size: 18px;
-  font-family: "Arial";
+  font-size: 18px ;
+  font-family:"Arial" ;
   color: white;
 }
 
-#form {
-  width: 40%;
-  margin-right: 40px;
+#form{
+  width:40%;
+  margin-right:40px;
 }
 #contact-detail input,
 textarea {
   background: inherit;
   border: none;
 }
-#contact-detail button {
-  background: inherit;
-  color: white;
-  padding: 10px;
-  border-color: white;
-  margin-left: 30%;
+#contact-detail button{
+  background:inherit;
+  color:white;
+  padding:10px;
+  border-color:white;
+margin-left: 30%;
 }
