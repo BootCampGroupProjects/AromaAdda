@@ -143,3 +143,86 @@ textarea {
   border-color: white;
   margin-left: 30%;
 }
+
+
+/* Deepa */
+
+.heading {
+  font-family: "Zilla Slab", serif;
+  font-size: 2.4vw;
+  margin-left: 3%;
+}
+
+.heading::after {
+  content: '';
+  width: 65%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 1.45rem;
+}
+
+.top-brands .container {
+  display: flex;
+  width: calc(100%-50px);
+  margin-left: 50px;
+  margin-right: 50px;
+  overflow-x: scroll;
+  gap: 25px;
+  padding-bottom: 30px;
+}
+
+.top-brands .container::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+/* Track */
+.top-brands .container::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+.top-brands .container::-webkit-scrollbar-thumb {
+  background: #999; 
+  border-radius: 10px;
+}
+
+
+/* Handle on hover */
+.top-brands .container::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.top-brands .image img{
+  width: 17rem;
+  height: 13rem;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.top-brands .content {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+  margin-top: 5px;
+}
+
+.top-brands .content h4, p, h5 {
+  margin: 3px;
+}
+
+.top-brands .content h5 {
+  color: #999;
+}
+
+.top-brands .brand .image {
+  transition: 0.3s transform;
+}
+
+.top-brands .brand:hover .image {
+  transform: scale(1.05);
+}
+
+/* Deepa */
