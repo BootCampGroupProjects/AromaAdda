@@ -93,6 +93,318 @@ ul li img {
   }
 }
 
+/*------------------------Restraunts with food delivery -------------------------*/
+
+
+.Restaurants .container{
+  padding-top: 5%;
+  position: relative;
+  margin : 0 auto;
+  
+  
+  
+  
+
+}
+
+.TitleBar {
+  font-family: "Zilla Slab", serif;
+  font-size: 2.4vw;
+  font-weight: bolder;
+  margin-left: 3%;
+  
+}
+
+.TitleBar::after{
+  
+    content: '';
+    width: 40%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 1.45rem;
+  
+}
+
+.container .ItemBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  
+}
+
+/*.ItemBar ::after{
+  color :cornflowerblue;
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: 81px;
+  height: 1px;
+  
+}*/
+
+.ItemBar div{
+  width: 150px;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ItemBar div:hover{
+
+  border: 1px solid white;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10%;
+}
+
+.ItemBar .NewOnAromaAdda, .Ratings,.PureVeg,.FastDelivery ,.Cost {
+  border-bottom: 1px solid white;
+}
+
+
+
+
+
+
+.RestaurantsList{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  justify-content: space-between;
+  margin-bottom: 80px;
+  padding-top: 39px;
+  margin-top: 25px;
+  cursor: pointer;
+  
+}
+
+.RestaurantsList .ListItem{
+  padding: 25px 25px 57px;
+ 
+  contain: content;
+}
+
+.RestaurantsList .ListItem:hover{
+  transition: all 0.2s ease-in-out;
+   transform: scale(0.94);
+
+}
+
+.ItemContent{
+  width: 100%;
+  height: 320px;
+  position: relative;
+  
+}
+
+.TopImg{
+  position: relative;
+  
+}
+
+.TopImg img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  position: relative;
+  border-radius: 20px;
+  transition: 0.2s ease;
+  
+}
+
+
+
+.BottomLeft{
+  position: absolute;
+  margin-top: -20px;
+  font-weight: bolder;
+  font-size: large;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+}
+
+.BottomLeftTitle{
+text-align: center;
+
+}
+ 
+
+.PlaceName{
+   
+  margin-top: 14px;
+}
+
+.PlaceName .name{
+
+  font-size: 18px;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.PlaceName .FoodItems{
+  height: 30px;
+   font-size: 15px;
+   margin-top: 7px;
+   font-weight: 300;
+   color : lightgrey;
+
+}
+
+.Info{
+  display: flex;
+  text-align: center;
+  margin-top: 18px;
+  font-size: 15px;
+  justify-content: space-between;
+  font-weight: 300;
+}
+
+.Info .rating{
+  height: 20px;
+  width: 36px;
+  padding: 0 5px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.StarIcon{
+  font-size: 10px;
+  margin-right: 4px;
+  position: relative;
+  top: -1px;
+}
+.Info .Veg ,.NonVeg{
+
+  font-size: 13px;
+  margin-right: 4px;
+  position: relative;
+  top : 2px;
+  width : 12px;
+  height: 12px;
+}
+
+.Info .Veg {
+  border: 1px solid #00FF00;
+ 
+}
+
+.Info .NonVeg {
+  border: 1px solid #FF0000;
+}
+
+.Offer{
+  border-top: 1px solid #e9e9eb;
+  padding-top: 14px;
+  margin-top: 14px;
+  color : #b29700;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.Offer .OfferIcon {
+
+  font-size: 16px;
+  width: 20px;
+  height: 16px;
+  margin-right: 4px;
+  margin-top: -3px;
+}
+
+.Offer .OfferText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.ShowMore{
+  padding: 5px 650px;
+  margin: 0 auto;
+  font-size: 20px;
+  height: 30px;
+  
+}
+
+.ShowMoreBtn{
+  width : 200px;
+  height: 30px;
+  font-size: 18px;
+  border: 1px solid white;
+  background: transparent;
+  color: #e9e9eb;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.ShowMoreBtn:hover{
+  background: rgb(100, 208, 70);
+  transform: scale(1.04);
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .RestaurantsList{
+  
+   grid-template-columns: repeat(2, 50%);
+   
+  }
+  .ShowMore{
+      padding: 5px 150px;
+      
+      
+  }
+
+  .ItemBar{
+     display: none;
+  }
+  
+
+
+}
+
+@media screen and (max-width: 576px) {
+  
+  .RestaurantsList{
+  
+      grid-template-columns: repeat(1, 90%);
+     }
+     .ShowMore{
+      padding: 5px 50px;
+      }
+
+      .ItemBar{
+          display: none;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Contact us section  */
 
 #contact-container {
