@@ -85,6 +85,17 @@ section .bottomhr {
   .listOfOffers li img {
     height: 15vw;
   }
+
+  /* =========================== */
+
+  .filtersTag {
+    font-size: 1.4vw;
+  }
+
+  .filterListItems {
+    padding: 0.4vw 1vw;
+    font-size: 1.4vw;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -113,6 +124,40 @@ section .bottomhr {
   position: relative;
   /* margin: 0 auto;*/
   width: 100%;
+}
+
+.filterContainer {
+  margin-left: 5vw;
+}
+
+.filtersTag {
+  display: inline-block;
+  margin-right: 2vw;
+  font-size: 1.3vw;
+  font-weight: 400;
+  padding: 0.5vw;
+}
+.filterList {
+  display: inline-block;
+  padding-inline-start: 0;
+}
+
+.filterListItems {
+  display: inline-block;
+  font-size: 1.1vw;
+
+  margin-right: 5vw;
+
+  padding: 0.4vw 2vw;
+
+  background-color: rgb(124, 124, 124);
+  border-radius: 0.5vw;
+}
+
+.filterListItems:hover {
+  cursor: pointer;
+  background-color: rgb(218, 218, 218);
+  color: black;
 }
 
 .TitleBar {
