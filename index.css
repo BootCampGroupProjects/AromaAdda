@@ -10,6 +10,15 @@ body {
   /**/
   margin-top: 10%;
 }
+
+section .bottomhr {
+  margin: 3rem auto 3rem auto;
+  background-color: rgba(159, 159, 159, 0.293);
+  height: 0.2rem;
+  width: 90%;
+  border: none;
+}
+
 .sectionHead {
   margin-top: 3.3%;
   margin-bottom: 3.1%;
@@ -56,15 +65,20 @@ body {
 ul li {
   display: inline-block;
   flex-wrap: wrap;
-  margin: 0.6vw;
+  margin: 1.1vw;
 
-  width: 22%;
+  width: 28%;
 }
 
 ul li img {
   height: 15vw;
-  width: 100% !important;
-  border-radius: 4%;
+  width: 100%;
+  border-radius: 8%;
+}
+
+ul li :hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {
@@ -95,16 +109,10 @@ ul li img {
 
 /*------------------------Restraunts with food delivery -------------------------*/
 
-
-.Restaurants .container{
+.Restaurants .container {
   padding-top: 5%;
   position: relative;
-  margin : 0 auto;
-  
-  
-  
-  
-
+  margin: 0 auto;
 }
 
 .TitleBar {
@@ -112,27 +120,23 @@ ul li img {
   font-size: 2.4vw;
   font-weight: bolder;
   margin-left: 3%;
-  
 }
 
-.TitleBar::after{
-  
-    content: '';
-    width: 40%;
-    height: 2px;
-    background-color: white;
-    position: absolute;
-    margin-left: 40px;
-    margin-top: 1.45rem;
-  
+.TitleBar::after {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 1.45rem;
 }
 
-.container .ItemBar{
+.container .ItemBar {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-top: 40px;
-  
 }
 
 /*.ItemBar ::after{
@@ -146,7 +150,7 @@ ul li img {
   
 }*/
 
-.ItemBar div{
+.ItemBar div {
   width: 150px;
   font-size: 16px;
   font-weight: 300;
@@ -154,24 +158,22 @@ ul li img {
   text-align: center;
 }
 
-.ItemBar div:hover{
-
+.ItemBar div:hover {
   border: 1px solid white;
   font-size: 15px;
   transition: all 0.2s ease-in-out;
   border-radius: 10%;
 }
 
-.ItemBar .NewOnAromaAdda, .Ratings,.PureVeg,.FastDelivery ,.Cost {
+.ItemBar .NewOnAromaAdda,
+.Ratings,
+.PureVeg,
+.FastDelivery,
+.Cost {
   border-bottom: 1px solid white;
 }
 
-
-
-
-
-
-.RestaurantsList{
+.RestaurantsList {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   justify-content: space-between;
@@ -179,46 +181,39 @@ ul li img {
   padding-top: 39px;
   margin-top: 25px;
   cursor: pointer;
-  
 }
 
-.RestaurantsList .ListItem{
+.RestaurantsList .ListItem {
   padding: 25px 25px 57px;
- 
+
   contain: content;
 }
 
-.RestaurantsList .ListItem:hover{
+.RestaurantsList .ListItem:hover {
   transition: all 0.2s ease-in-out;
-   transform: scale(0.94);
-
+  transform: scale(0.94);
 }
 
-.ItemContent{
+.ItemContent {
   width: 100%;
   height: 320px;
   position: relative;
-  
 }
 
-.TopImg{
+.TopImg {
   position: relative;
-  
 }
 
-.TopImg img{
+.TopImg img {
   width: 100%;
   height: 160px;
   object-fit: cover;
   position: relative;
   border-radius: 20px;
   transition: 0.2s ease;
-  
 }
 
-
-
-.BottomLeft{
+.BottomLeft {
   position: absolute;
   margin-top: -20px;
   font-weight: bolder;
@@ -226,37 +221,31 @@ ul li img {
   width: 100%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  
 }
 
-.BottomLeftTitle{
-text-align: center;
-
+.BottomLeftTitle {
+  text-align: center;
 }
- 
 
-.PlaceName{
-   
+.PlaceName {
   margin-top: 14px;
 }
 
-.PlaceName .name{
-
+.PlaceName .name {
   font-size: 18px;
   font-weight: 600;
   word-break: break-word;
 }
 
-.PlaceName .FoodItems{
+.PlaceName .FoodItems {
   height: 30px;
-   font-size: 15px;
-   margin-top: 7px;
-   font-weight: 300;
-   color : lightgrey;
-
+  font-size: 15px;
+  margin-top: 7px;
+  font-weight: 300;
+  color: lightgrey;
 }
 
-.Info{
+.Info {
   display: flex;
   text-align: center;
   margin-top: 18px;
@@ -265,7 +254,7 @@ text-align: center;
   font-weight: 300;
 }
 
-.Info .rating{
+.Info .rating {
   height: 20px;
   width: 36px;
   padding: 0 5px;
@@ -274,43 +263,41 @@ text-align: center;
   align-items: center;
 }
 
-.StarIcon{
+.StarIcon {
   font-size: 10px;
   margin-right: 4px;
   position: relative;
   top: -1px;
 }
-.Info .Veg ,.NonVeg{
-
+.Info .Veg,
+.NonVeg {
   font-size: 13px;
   margin-right: 4px;
   position: relative;
-  top : 2px;
-  width : 12px;
+  top: 2px;
+  width: 12px;
   height: 12px;
 }
 
 .Info .Veg {
-  border: 1px solid #00FF00;
- 
+  border: 1px solid #00ff00;
 }
 
 .Info .NonVeg {
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
 }
 
-.Offer{
+.Offer {
   border-top: 1px solid #e9e9eb;
   padding-top: 14px;
   margin-top: 14px;
-  color : #b29700;
+  color: #b29700;
   display: flex;
   align-items: center;
   font-weight: 600;
 }
 
 .Offer .OfferIcon {
-
   font-size: 16px;
   width: 20px;
   height: 16px;
@@ -319,21 +306,20 @@ text-align: center;
 }
 
 .Offer .OfferText {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
 }
 
-.ShowMore{
+.ShowMore {
   padding: 5px 650px;
   margin: 0 auto;
   font-size: 20px;
   height: 30px;
-  
 }
 
-.ShowMoreBtn{
-  width : 200px;
+.ShowMoreBtn {
+  width: 200px;
   height: 30px;
   font-size: 18px;
   border: 1px solid white;
@@ -344,66 +330,37 @@ text-align: center;
   transition: 0.2s;
 }
 
-.ShowMoreBtn:hover{
+.ShowMoreBtn:hover {
   background: rgb(100, 208, 70);
   transform: scale(1.04);
   color: black;
 }
 
 @media screen and (max-width: 768px) {
-  .RestaurantsList{
-  
-   grid-template-columns: repeat(2, 50%);
-   
+  .RestaurantsList {
+    grid-template-columns: repeat(2, 50%);
   }
-  .ShowMore{
-      padding: 5px 150px;
-      
-      
+  .ShowMore {
+    padding: 5px 150px;
   }
 
-  .ItemBar{
-     display: none;
+  .ItemBar {
+    display: none;
   }
-  
-
-
 }
 
 @media screen and (max-width: 576px) {
-  
-  .RestaurantsList{
-  
-      grid-template-columns: repeat(1, 90%);
-     }
-     .ShowMore{
-      padding: 5px 50px;
-      }
+  .RestaurantsList {
+    grid-template-columns: repeat(1, 90%);
+  }
+  .ShowMore {
+    padding: 5px 50px;
+  }
 
-      .ItemBar{
-          display: none;
-      }
+  .ItemBar {
+    display: none;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Contact us section  */
 
@@ -413,13 +370,13 @@ text-align: center;
   margin: 5vw;
 }
 
-#form{
-  width:40vw;
-  margin-left:3.5vw;
-  margin-top:-1vw;
-
+#form {
+  width: 40vw;
+  margin-left: 3.5vw;
+  margin-top: -1vw;
 }
-#contact-detail input, textarea {
+#contact-detail input,
+textarea {
   border: none;
   background: inherit;
   outline: none;
@@ -436,37 +393,34 @@ text-align: center;
   font-size: 1.1vw;
 }
 
-
-
 /* Footer section */
 
 .mainName {
   text-align: center;
-  margin:3vw;
+  margin: 3vw;
 }
-.logoName{
-  display:flex;
+.logoName {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 2vw;
   margin: 0.5rem;
 }
 
-.logoData{
+.logoData {
   margin-left: 5.5rem;
   color: lightgray;
   font-size: 1.1vw;
 }
 
 .gridContainer {
-  display:grid;
-  grid-template-columns:repeat( 3, 1fr);
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.footerHeading ul li{
+.footerHeading ul li {
   display: block;
-  color:lightgray;
+  color: lightgray;
   width: max-content;
 }
 
@@ -477,7 +431,8 @@ text-align: center;
   width: 10vw;
 }
 
-.c1 , .addressHeading{
+.c1,
+.addressHeading {
   font-size: 1.3vw;
   font-family: "Arial";
   color: white;
@@ -487,10 +442,9 @@ text-align: center;
 .c2 a {
   text-decoration: none;
   color: lightgray;
-  
-} 
-.c2_1{
-  font-size:1.1vw;
+}
+.c2_1 {
+  font-size: 1.1vw;
 }
 
 /* Deepa */
@@ -502,7 +456,7 @@ text-align: center;
 }
 
 .heading::after {
-  content: '';
+  content: "";
   width: 65%;
   height: 2px;
   background-color: white;
@@ -528,22 +482,21 @@ text-align: center;
 
 /* Track */
 .top-brands .container::-webkit-scrollbar-track {
-  background: transparent; 
+  background: transparent;
 }
- 
+
 /* Handle */
 .top-brands .container::-webkit-scrollbar-thumb {
-  background: #999; 
+  background: #999;
   border-radius: 10px;
 }
 
-
 /* Handle on hover */
 .top-brands .container::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
-.top-brands .image img{
+.top-brands .image img {
   width: 17rem;
   height: 13rem;
   border-radius: 6px;
@@ -553,11 +506,13 @@ text-align: center;
 .top-brands .content {
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   margin-top: 5px;
 }
 
-.top-brands .content h4, p, h5 {
+.top-brands .content h4,
+p,
+h5 {
   margin: 3px;
 }
 
