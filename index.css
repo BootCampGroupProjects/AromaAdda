@@ -108,11 +108,11 @@ ul li :hover {
 }
 
 /*------------------------Restraunts with food delivery -------------------------*/
-
 .Restaurants .container {
   padding-top: 5%;
   position: relative;
-  margin: 0 auto;
+  /* margin: 0 auto;*/
+  width: 100%;
 }
 
 .TitleBar {
@@ -136,22 +136,21 @@ ul li :hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 10vh;
 }
 
-/*.ItemBar ::after{
-  color :cornflowerblue;
+.ItemBar ::after {
+  color: cornflowerblue;
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   right: 0;
   top: 81px;
   height: 1px;
-  
-}*/
+}
 
 .ItemBar div {
-  width: 150px;
+  width: 10vw;
   font-size: 16px;
   font-weight: 300;
   cursor: pointer;
@@ -165,38 +164,41 @@ ul li :hover {
   border-radius: 10%;
 }
 
-.ItemBar .NewOnAromaAdda,
-.Ratings,
-.PureVeg,
-.FastDelivery,
-.Cost {
-  border-bottom: 1px solid white;
-}
-
 .RestaurantsList {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   justify-content: space-between;
-  margin-bottom: 80px;
-  padding-top: 39px;
-  margin-top: 25px;
-  cursor: pointer;
+  margin-bottom: 10vh;
+  padding-top: 6vh;
+  /*margin-top: 25px;*/
+  margin-top: 4vh;
 }
 
 .RestaurantsList .ListItem {
-  padding: 25px 25px 57px;
-
+  /* padding: 25px 25px 57px;*/
+  /*padding : 3vh 3vh 5vh;*/
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
   contain: content;
+  padding-bottom: 1vw;
+  margin-bottom: 2vw;
+  cursor: pointer;
 }
 
 .RestaurantsList .ListItem:hover {
   transition: all 0.2s ease-in-out;
-  transform: scale(0.94);
+  transform: scale(0.95);
+  background-color: #e3e7e9;
+  color: #353434;
+  border-radius: 4%;
 }
 
 .ItemContent {
-  width: 100%;
-  height: 320px;
+  /* height: 320px;*/
+
+  padding-left: 0.7vw;
+  padding-right: 0.7vw;
+
   position: relative;
 }
 
@@ -209,68 +211,92 @@ ul li :hover {
   height: 160px;
   object-fit: cover;
   position: relative;
-  border-radius: 20px;
+
+  border-top-right-radius: 4%;
+  border-top-left-radius: 4%;
+
   transition: 0.2s ease;
 }
 
 .BottomLeft {
-  position: absolute;
-  margin-top: -20px;
-  font-weight: bolder;
-  font-size: large;
-  width: 100%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  background: #190557fa;
+  color: rgb(255, 255, 255);
+  border-color: rgb(30, 32, 35) transparent;
+  margin-top: -15%;
+  margin-left: -4%;
+  width: fit-content;
+  padding: 0.5%;
+  padding-right: 1.5%;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .BottomLeftTitle {
-  text-align: center;
+  text-align: left;
 }
 
 .PlaceName {
-  margin-top: 14px;
+  margin-top: 2vw;
 }
 
 .PlaceName .name {
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 600;
   word-break: break-word;
+  display: inline;
 }
 
 .PlaceName .FoodItems {
   height: 30px;
-  font-size: 15px;
+  font-size: 0.8vw;
   margin-top: 7px;
-  font-weight: 300;
-  color: lightgrey;
+  font-weight: 100;
 }
 
 .Info {
-  display: flex;
-  text-align: center;
   margin-top: 18px;
   font-size: 15px;
-  justify-content: space-between;
   font-weight: 300;
+  display: flex;
+  justify-content: space-between;
 }
 
-.Info .rating {
+.rating {
   height: 20px;
-  width: 36px;
-  padding: 0 5px;
+  padding: 0 1vw;
   font-weight: 400;
-  display: flex;
-  align-items: center;
+  display: inline;
+  margin: auto;
+  float: right;
+}
+
+.Veg {
+  color: #0da80d;
+}
+
+.NonVeg {
+  color: #bf1919;
+}
+
+.vegOrNonVeg {
+  display: inline;
 }
 
 .StarIcon {
-  font-size: 10px;
+  font-size: 1vw;
   margin-right: 4px;
   position: relative;
   top: -1px;
 }
 .Info .Veg,
 .NonVeg {
+  display: inline;
   font-size: 13px;
   margin-right: 4px;
   position: relative;
@@ -279,22 +305,27 @@ ul li :hover {
   height: 12px;
 }
 
-.Info .Veg {
+.deliveryTime {
+  display: inline;
+}
+
+/*.Info .Veg {
   border: 1px solid #00ff00;
 }
 
 .Info .NonVeg {
   border: 1px solid #ff0000;
 }
+*/
 
 .Offer {
-  border-top: 1px solid #e9e9eb;
   padding-top: 14px;
   margin-top: 14px;
   color: #b29700;
   display: flex;
   align-items: center;
   font-weight: 600;
+  border-top: 0.1vw solid gray;
 }
 
 .Offer .OfferIcon {
@@ -312,28 +343,35 @@ ul li :hover {
 }
 
 .ShowMore {
-  padding: 5px 650px;
-  margin: 0 auto;
+  /* padding: 5px 650px;*/
+  /*padding: 0 50vw;*/
+  width: 95vw;
   font-size: 20px;
   height: 30px;
+  text-align: center;
 }
 
 .ShowMoreBtn {
-  width: 200px;
-  height: 30px;
-  font-size: 18px;
-  border: 1px solid white;
-  background: transparent;
-  color: #e9e9eb;
+  width: 10%;
+  font-size: 1vw;
+  border: none;
+  background-color: rgb(219, 219, 219);
+  color: black;
   border-radius: 4px;
   cursor: pointer;
   transition: 0.2s;
+  left: 50%;
+  padding: 0.5vw;
+}
+.ShowMoreBtn i {
+  padding-left: 1vw;
 }
 
 .ShowMoreBtn:hover {
-  background: rgb(100, 208, 70);
+  background-color: rgb(167, 167, 167);
   transform: scale(1.04);
   color: black;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -391,7 +429,7 @@ ul li :hover {
   height: 4vw;
 }
 
-#contact-detail textarea{
+#contact-detail textarea {
   border: none;
   background: inherit;
   outline: none;
@@ -401,13 +439,12 @@ ul li :hover {
   margin-top: 1.5vw;
   height: 3vw;
 }
-#contact-detail label{
+#contact-detail label {
   font-size: 1vw;
-  display:inline-block;
+  display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   left: -0.5vw;
-  
 }
 
 #contact-detail button {
@@ -418,11 +455,10 @@ ul li :hover {
   border-radius: 3px;
   margin-left: 15vw;
   margin-top: 5%;
-  transition: .5s;
+  transition: 0.5s;
   font-size: 1.1vw;
-
 }
-#contact-detail button:hover{
+#contact-detail button:hover {
   background: #48bc54;
   color: black;
   padding: 8px;
@@ -430,38 +466,37 @@ ul li :hover {
   border-radius: 7px;
 }
 
-
-@media screen and (max-width: 768px){
-  #contact-container{
+@media screen and (max-width: 768px) {
+  #contact-container {
     width: 60vw;
   }
   #form {
-        width: 50vw;
-    }
+    width: 50vw;
+  }
 
-    #contact-detail button{
-        padding:6px;
-        font-size: 1.5vw;
-    }
+  #contact-detail button {
+    padding: 6px;
+    font-size: 1.5vw;
+  }
 }
-@media screen and (max-width: 576px){
-  #contact-container{
+@media screen and (max-width: 576px) {
+  #contact-container {
     width: 60vw;
   }
 
   #form {
-      width: 50vw;
-    }
+    width: 50vw;
+  }
 
-  #contact-detail button{
-    padding:6px;
+  #contact-detail button {
+    padding: 6px;
     font-size: 2vw;
   }
 }
 
 /* Footer section */
 
-.footerSection{
+.footerSection {
   display: flex;
   flex-direction: row;
   background-color: black;
@@ -471,7 +506,7 @@ ul li :hover {
 .mainName {
   text-align: left;
   margin: 2vw;
-  width:20vw;
+  width: 20vw;
 }
 
 .logoName {
@@ -480,7 +515,7 @@ ul li :hover {
   justify-content: left;
   font-size: 2vw;
   margin: 0.5rem;
-  width:40vw;
+  width: 40vw;
 }
 
 .logoData {
@@ -512,7 +547,7 @@ ul li :hover {
   color: white;
   width: max-content;
 }
-.address a{
+.address a {
   text-decoration: none;
   color: lightgray;
 }
@@ -529,7 +564,6 @@ ul li :hover {
   margin: 0px;
   position: absolute;
   margin-top: 2vw;
-
 }
 
 .horizontal-list li {
@@ -555,55 +589,53 @@ ul li :hover {
   box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 
-@media  screen and (max-width: 768px){
-    .logoName{
-        font-size:2.5vw;
-    }
-    .logoData{
-        font-size: 1.5vw;
-        margin-left: 4vw;
-    }
-    .gridContainer {
-        grid-template-columns: repeat(3, 1fr);
-
-    }
-    .address .addressHeading{
-        font-size: 2vw;
-    }
-    .address .c2_1 {
-        font-size: 1.8vw;
-      }
-    .horizontal-list li{
-      width: 2vw;
-    }
-    .social-icons li a i {
-      font-size: 0.7rem;
-    }
+@media screen and (max-width: 768px) {
+  .logoName {
+    font-size: 2.5vw;
+  }
+  .logoData {
+    font-size: 1.5vw;
+    margin-left: 4vw;
+  }
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .address .addressHeading {
+    font-size: 2vw;
+  }
+  .address .c2_1 {
+    font-size: 1.8vw;
+  }
+  .horizontal-list li {
+    width: 2vw;
+  }
+  .social-icons li a i {
+    font-size: 0.7rem;
+  }
 }
 
-@media  screen and (max-width: 576px){
-    .logoName{
-      font-size:2.5vw;
-    }
-    .logoData{
-      font-size: 1.5vw;
-    }
-    .gridContainer {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .address .addressHeading{
-      font-size: 2vw;
-    }
-    .address .c2_1 {
-      font-size: 1.8vw;
-    }
-    .horizontal-list li{
-      width: 1.5vw;
-    }
-    .social-icons li a i {
-      font-size: 0.7rem;
-    }
-
+@media screen and (max-width: 576px) {
+  .logoName {
+    font-size: 2.5vw;
+  }
+  .logoData {
+    font-size: 1.5vw;
+  }
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .address .addressHeading {
+    font-size: 2vw;
+  }
+  .address .c2_1 {
+    font-size: 1.8vw;
+  }
+  .horizontal-list li {
+    width: 1.5vw;
+  }
+  .social-icons li a i {
+    font-size: 0.7rem;
+  }
 }
 
 /* Deepa */
@@ -641,51 +673,50 @@ ul li :hover {
 
 /* Track */
 .top-brands .container::-webkit-scrollbar-track {
-  background: #5555557c; 
-  border-radius: 10px; 
-}
- 
-/* Handle */
-.top-brands .container::-webkit-scrollbar-thumb {
-  background: #8b89897c; 
+  background: #5555557c;
   border-radius: 10px;
 }
 
+/* Handle */
+.top-brands .container::-webkit-scrollbar-thumb {
+  background: #8b89897c;
+  border-radius: 10px;
+}
 
 /* Handle on hover */
 .top-brands .container::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
-.top-brands .image img{
+.top-brands .image img {
   width: 17rem;
   height: 13rem;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
   object-fit: cover;
-  
 }
 
 .top-brands .content {
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   margin-top: 5px;
   padding: 4px;
 }
 
-.top-brands .content h4, p, h5 {
+.top-brands .content h4,
+p,
+h5 {
   margin: 3px;
 }
 
 /* .top-brands  */
-.content h5 { 
+.content h5 {
   color: #999;
 }
 
 .top-brands .brand {
   transition: 0.3s transform;
-  
 }
 
 .top-brands .brand:hover {
@@ -695,7 +726,6 @@ ul li :hover {
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
 }
-
 
 @media screen and (max-width: 768px) {
   .heading {
@@ -726,7 +756,7 @@ ul li :hover {
     margin-left: 5%;
     margin-right: 5%;
   }
-  
+
   .top-brands .image img {
     width: 7rem;
     height: 5rem;
