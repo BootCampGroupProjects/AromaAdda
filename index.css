@@ -678,7 +678,8 @@ ul li :hover {
   margin: 3px;
 }
 
-/* .top-brands .content h5 { */
+/* .top-brands  */
+.content h5 { 
   color: #999;
 }
 
@@ -712,7 +713,7 @@ ul li :hover {
     width: 9rem;
     height: 6rem;
   }
-
+}
 
 @media screen and (max-width: 576px) {
   .heading {
@@ -734,5 +735,6 @@ ul li :hover {
   .top-brands .content p h5 {
     font-size: 0;
   }
+}
 
 /* Deepa */
