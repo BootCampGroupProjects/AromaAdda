@@ -536,15 +536,15 @@ textarea {
   margin-left: 3%;
 }
 
-.heading::after {
-  content: "";
+/* .heading::after {
+  content: '';
   width: 65%;
   height: 2px;
   background-color: white;
   position: absolute;
   margin-left: 40px;
   margin-top: 1.45rem;
-}
+} */
 
 .top-brands .container {
   display: flex;
@@ -563,50 +563,98 @@ textarea {
 
 /* Track */
 .top-brands .container::-webkit-scrollbar-track {
-  background: transparent;
+  background: #5555557c; 
+  border-radius: 10px; 
 }
-
+ 
 /* Handle */
 .top-brands .container::-webkit-scrollbar-thumb {
-  background: #999;
+  background: #8b89897c; 
   border-radius: 10px;
 }
 
+
 /* Handle on hover */
 .top-brands .container::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #555; 
 }
 
-.top-brands .image img {
+.top-brands .image img{
   width: 17rem;
   height: 13rem;
-  border-radius: 6px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
   object-fit: cover;
+  
 }
 
 .top-brands .content {
   display: flex;
   flex-direction: column;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   margin-top: 5px;
+  padding: 4px;
 }
 
-.top-brands .content h4,
-p,
-h5 {
+.top-brands .content h4, p, h5 {
   margin: 3px;
 }
 
-.top-brands .content h5 {
+/* .top-brands .content h5 { */
   color: #999;
 }
 
-.top-brands .brand .image {
+.top-brands .brand {
   transition: 0.3s transform;
+  
 }
 
-.top-brands .brand:hover .image {
+.top-brands .brand:hover {
   transform: scale(1.05);
+  background-color: #e3e7e9;
+  color: #353434;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 2vw;
+    margin-bottom: -2vw;
+  }
+
+  .top-brands .container {
+    margin-top: 4%;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .top-brands .image img {
+    width: 9rem;
+    height: 6rem;
+  }
+
+
+@media screen and (max-width: 576px) {
+  .heading {
+    font-size: 2vw;
+    margin-bottom: -2vw;
+  }
+
+  .top-brands .container {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .top-brands .image img {
+    width: 7rem;
+    height: 5rem;
+  }
+
+  .top-brands .content p h5 {
+    font-size: 0;
+  }
 
 /* Deepa */
