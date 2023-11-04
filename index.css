@@ -40,6 +40,9 @@ section .bottomhr {
 .restaurnantsHeadingLine {
   width: 37% !important;
 }
+.contactHeadingLine{
+  width: 65% !important;
+}
 
 .sectionHead h2 {
   width: 50%;
@@ -386,7 +389,7 @@ p {
 .ShowMore {
   /* padding: 5px 650px;*/
   /*padding: 0 50vw;*/
-  width: 95vw;
+  width: 89vw;
   font-size: 20px;
   height: 30px;
   text-align: center;
@@ -419,9 +422,9 @@ p {
   .RestaurantsList {
     grid-template-columns: repeat(2, 50%);
   }
-  .ShowMore {
+  /* .ShowMore {
     padding: 5px 150px;
-  }
+  } */
 
   .ItemBar {
     display: none;
@@ -432,9 +435,9 @@ p {
   .RestaurantsList {
     grid-template-columns: repeat(1, 90%);
   }
-  .ShowMore {
+  /* .ShowMore {
     padding: 5px 50px;
-  }
+  } */
 
   .ItemBar {
     display: none;
@@ -454,38 +457,63 @@ p {
 }
 
 #form {
-  width: 40vw;
+  width: 50vw;
   margin-left: 3.5vw;
   margin-top: -1vw;
 }
 
 #contact-detail input {
-  border: none;
+  display: inline;
+  border:none;
+  border-bottom: 2px solid white !important;
   background: inherit;
   outline: none;
   color: whitesmoke;
   width: auto;
   resize: none;
+  margin:0 1.5vw;
   font-size: 1vw;
-  height: 4vw;
+  height: 2vw;
 }
 
 #contact-detail textarea {
+  display: block;
+  font-size: 1vw;
   border: none;
+  border-bottom: 2px solid white !important;
   background: inherit;
   outline: none;
   color: whitesmoke;
-  width: auto;
+  width: 16vw;
   resize: none;
   margin-top: 1.5vw;
-  height: 3vw;
+  margin-left: 9vw;
+  height: 2vw;
 }
+
 #contact-detail label {
+  display: inline;
   font-size: 1vw;
-  display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
-  position: relative;
-  left: -0.5vw;
+}
+
+#contact-detail .emailInput{
+  margin: 0 4vw;
+  width: 16vw;
+}
+.name, .email{
+  display: block;
+  margin: 30px;
+  width:45vw;
+}
+.nameLabel{
+  font-family: sans-serif;
+}
+.emailLabel{
+  font-family: sans-serif;
+  width: 5vw;
+  margin-top:5%;
+  left: 0.5vw!important;
 }
 
 #contact-detail button {
@@ -499,12 +527,11 @@ p {
   transition: 0.5s;
   font-size: 1.1vw;
 }
+
 #contact-detail button:hover {
-  background: #48bc54;
+  background: rgb(219, 219, 219);
   color: black;
-  padding: 8px;
-  font-size: 1.3vw;
-  border-radius: 7px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -514,7 +541,9 @@ p {
   #form {
     width: 50vw;
   }
-
+  #contact-detail textarea{
+    margin-left:12vw;
+  }
   #contact-detail button {
     padding: 6px;
     font-size: 1.5vw;
@@ -528,7 +557,9 @@ p {
   #form {
     width: 50vw;
   }
-
+  #contact-detail textarea{
+    margin-left:13vw;
+  }
   #contact-detail button {
     padding: 6px;
     font-size: 2vw;
@@ -542,6 +573,7 @@ p {
   flex-direction: row;
   background-color: black;
   padding: 0.5vw;
+  width: auto;
 }
 
 .mainName {
@@ -556,7 +588,7 @@ p {
   justify-content: left;
   font-size: 2vw;
   margin: 0.5rem;
-  width: 40vw;
+  width: 30vw;
 }
 
 .logoData {
@@ -571,6 +603,10 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 2vw;
+}
+
+.footerHeading{
+  margin:0 3vw;
 }
 
 .footerHeading ul li {
@@ -639,7 +675,7 @@ p {
     margin-left: 4vw;
   }
   .gridContainer {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .address .addressHeading {
     font-size: 2vw;
@@ -680,11 +716,15 @@ p {
 }
 
 /* Deepa */
+/* .top-brands{
+  width: auto;
+} */
 
 .heading {
   font-family: "Zilla Slab", serif;
   font-size: 2.4vw;
   margin-left: 3%;
+  width: 90vw;
 }
 
 /* .heading::after {

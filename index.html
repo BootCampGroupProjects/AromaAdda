@@ -58,7 +58,7 @@
 
     <!--Top brands part -> Deepa-->
 
-    <section class="top-brands">
+    <section class="top-brands" id="topBrands">
       <h2 class="heading">Top brands</h2>
 
       <div class="container">
@@ -566,31 +566,26 @@
     <!--Contact Us part -> Bhupender-->
     <section id="contactUs">
       <div class="sectionHead">
-        <hr class="sectionHeadingLeftLine" />
-        <i
-          class="fa-solid fa-circle sectionHeadingLeftCircle"
-          style="color: #ffffff"
-        ></i>
         <h2 class="sectionHeading">Contact us</h2>
-        <hr class="sectionHeadingRightLine" />
-        <i
-          class="fa-solid fa-circle sectionHeadingRightCircle"
-          style="color: #ffffff"
-        ></i>
+        <hr class="sectionHeadingRightLine contactHeadingLine" />
       </div>
       <div id="contact-container">
         <div id="form">
           <form id="contact-detail">
-            <label> First Name</label>
-            <input type="text" placeholder="John" size="20" />
-            <label> Last Name</label>
-            <input type="text" placeholder="Roy" size="20" />
-            <hr />
-            <label>Email</label>
-            <input type="email" placeholder="john21roy@example.com" size="40" />
-            <hr />
-            <textarea name="Message" placeholder="Message" cols="35"></textarea>
-            <hr />
+          <div class="name">
+            <label class="nameLabel"> First Name</label>
+            <input type="text" placeholder="John" size="22" />
+            
+            <label class="nameLabel"> Last Name</label>
+            <input type="text" placeholder="Roy" size="18" />
+          </div>
+
+          <div class="email">
+            <label class="emailLabel">Email</label>
+            <input class="emailInput" type="email" placeholder="john21roy@example.com" size="32" />
+          </div>
+            <textarea name="Message" placeholder="Message"></textarea>
+
             <button type="submit">SEND MESSAGE</button>
           </form>
         </div>
@@ -608,6 +603,7 @@
           <div>&nbsp Aroma Adda</div>
         </div>
         <div class="logoData">2023 Bundle Industries Pvt Ltd</div>
+        
         <!-- social icons -->
         <div class="socialIcons">
           <ul class="horizontal-list text-center social-icons">
@@ -650,17 +646,15 @@
               <a href="#"><div class="c2_1">About</div></a>
             </li>
             <li class="address">
-              <a href="#"><div class="c2_1">Carrers</div></a>
+              <a href="#bestOffers"><div class="c2_1">Best Offers</div></a>
             </li>
             <li class="address">
-              <a href="#"><div class="c2_1">Team</div></a>
+              <a href="#topBrands"><div class="c2_1">Top Brands</div></a>
             </li>
             <li class="address">
-              <a href="#"><div class="c2_1">Best Offers</div></a>
+              <a href="#topRestaurants"><div class="c2_1">Restaurants</div></a>
             </li>
-            <li class="address">
-              <a href="#"><div class="c2_1">Top Brands</div></a>
-            </li>
+            
           </ul>
         </div>
 
