@@ -298,9 +298,10 @@ p {
 
 .PlaceName .FoodItems {
   height: 30px;
-  font-size: 0.8vw;
+  font-size: 1vw;
   margin-top: 7px;
   font-weight: 100;
+  color :#999;
 }
 
 .Info {
@@ -422,26 +423,98 @@ p {
   .RestaurantsList {
     grid-template-columns: repeat(2, 50%);
   }
-  /* .ShowMore {
-    padding: 5px 150px;
-  } */
+  .BottomLeft {
+    padding: 0.3%;
+    margin-left: -2%;
+    left : 10%;
+  }
 
-  .ItemBar {
-    display: none;
+  .PlaceName{
+    margin-top: 4vh;
+  }
+  
+  .PlaceName .FoodItems {
+    height: 30px;
+    font-size: 1.8vw;
+    margin-top: 7px;
+    font-weight: 100;
+    color: #999;
+}
+   .StarIcon{
+    font-size: 1.7vw;
+   }
+
+   .ShowMore {
+    /* padding: 5px 650px;*/
+    /*padding: 0 50vw;*/
+    width: 89vw;
+    font-size: 3vw;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .ShowMoreBtn {
+    width: 15%;
+    font-size: 2.5vw;
+    border: none;
+    background-color: rgb(219, 219, 219);
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    left: 50%;
+    padding: 0.5vw;
   }
 }
 
 @media screen and (max-width: 576px) {
   .RestaurantsList {
-    grid-template-columns: repeat(1, 90%);
+    width : 83vw;
+    grid-template-columns: repeat(1, 80%);
+    justify-content: center;
+    
   }
-  /* .ShowMore {
-    padding: 5px 50px;
-  } */
-
-  .ItemBar {
-    display: none;
+    .ListItem {
+      margin-bottom : 5%;
+    }
+  
+    .PlaceName{
+      margin-top: 4vh;
+    }
+    
+    .PlaceName .FoodItems {
+      height: 30px;
+      font-size: 2.3vw;
+      margin-top: 7px;
+      font-weight: 100;
+      color: #999;
   }
+     .StarIcon{
+      font-size: 2.4vw;
+     }
+  
+     .ShowMore {
+      /* padding: 5px 650px;*/
+      /*padding: 0 50vw;*/
+      margin-top: 10%;
+      width: 83vw;
+      font-size: 3vw;
+      height: 5vh;
+      text-align: center;
+    }
+    
+    .ShowMoreBtn {
+      width: 20%;
+      font-size: 3vw;
+      border: none;
+      background-color: rgb(219, 219, 219);
+      color: black;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.2s;
+      left: 50%;
+      padding: 0.5vw;
+    }
 }
 
 /*Contact us section  */
