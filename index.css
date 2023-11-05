@@ -10,28 +10,28 @@ body {
 }
 
 /* Navbar - Deepa */
-.navigation{
+.navigation {
   position: fixed;
   top: 0;
   display: flex;
   width: 100vw;
-  height:60px;
+  height: 60px;
   background-color: #000000;
   z-index: 999999;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.navigation .content{
+.navigation .content {
   width: 50%;
   display: flex;
   align-items: center;
   padding-left: 10px;
 }
-.navigation .links{
+.navigation .links {
   width: 50%;
   display: flex;
   align-items: center;
 }
-.navigation .brand{
+.navigation .brand {
   height: 100%;
   display: flex;
   align-items: center;
@@ -42,22 +42,22 @@ body {
   user-select: none;
   transition: transform 0.3s;
 }
-.navigation .brand:hover{
+.navigation .brand:hover {
   transform: scale(0.98);
 }
 .navigation .brand i {
   transition: transform 0.3s;
 }
-.navigation .brand:hover i{
+.navigation .brand:hover i {
   transform: rotate(-5deg);
 }
-.navigation .brand h6{
+.navigation .brand h6 {
   font-weight: bold;
 }
-.navigation .brand h6 span{
+.navigation .brand h6 span {
   color: #fcd34d;
 }
-.navigation .content .location{
+.navigation .content .location {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -65,19 +65,19 @@ body {
   font-size: 0.7rem;
   cursor: pointer;
 }
-.navigation .links{
+.navigation .links {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 60px;
   gap: 30px;
 }
-.navigation .links .link-item{
+.navigation .links .link-item {
   display: flex;
   align-items: center;
   font-family: "Zilla Slab", serif;
 }
-.navigation .links .link-item.space-left{
+.navigation .links .link-item.space-left {
   margin-left: 20px;
   margin-right: 10px;
 }
@@ -92,16 +92,16 @@ body {
   position: relative;
 }
 .navigation .links .link-item a i {
-  color: #ffff
+  color: #ffff;
 }
-.navigation .links .link-item a:hover{
+.navigation .links .link-item a:hover {
   transform: scale(0.98);
   color: #fcd34d;
 }
-.navigation .links .link-item a:hover i{
+.navigation .links .link-item a:hover i {
   color: #fcd34d;
 }
-.navigation .links .link-item a .badge{
+.navigation .links .link-item a .badge {
   position: absolute;
   top: -10px;
   right: -17px;
@@ -123,7 +123,6 @@ body {
   right: 5vw;
   top: 20px;
   display: none;
-  
 }
 
 .navigation .toggle-btn a {
@@ -147,7 +146,7 @@ body {
   justify-content: center;
   padding: 10px;
   list-style-type: none;
-  line-height:5vw ;
+  line-height: 5vw;
 }
 
 .navigation .toggle-btn #lightbox {
@@ -157,14 +156,13 @@ body {
   top: 0;
   right: 0;
   overflow: hidden;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .navigation .toggle-btn #lightbox a {
   position: relative;
   left: 85vw;
   top: 4%;
-  
 }
 
 .navigation .toggle-btn #lightbox:target {
@@ -173,56 +171,53 @@ body {
   top: 7%;
   right: 3%;
   background-color: rgba(0, 0, 0, 0.829);
-
 }
 
 @media screen and (max-width: 768px) {
   .navigation .toggle-btn {
     display: block;
   }
-  .navigation .content .location span{
+  .navigation .content .location span {
     display: none;
   }
 
-  .navigation .links{
+  .navigation .links {
     display: none;
   }
-  .navList li a{
+  .navList li a {
     left: 0vw !important;
   }
 
   .navigation .toggle-btn #lightbox:target {
     height: 38vw;
   }
-    
-  
 }
 
 @media screen and (max-width: 576px) {
   .navigation .toggle-btn {
     display: block;
   }
-  .navigation .content .location span{
+  .navigation .content .location span {
     display: none;
   }
-  .navigation .links{
+  .navigation .links {
     display: none;
   }
-  .navigation .toggle-btn #lightbox a{
-      font-size: 0.8em;
+  .navigation .toggle-btn #lightbox a {
+    font-size: 0.8em;
   }
   .navigation .toggle-btn #lightbox:target {
     height: 45vw;
   }
-  .navigation .toggle-btn #lightbox ul{
-    font-size: 3vw; 
+  .navigation .toggle-btn #lightbox ul {
+    font-size: 3vw;
     line-height: 6vw;
-  }  
-
+  }
 }
 
+/* ============ */
 
-/* Navbar - Deepa */
+/* Abhinav's part */
 
 section .bottomhr {
   margin: 3rem auto 3rem auto;
@@ -261,67 +256,61 @@ section .bottomhr {
   display: inline;
 }
 
- 
 #aboutUs {
-   background: linear-gradient(360deg, #242b2e 0%, rgb(0, 0, 0) 100%);
-   padding: 20px 0 20px 0;
-   text-align: center;
-   
- }
- 
- #aboutUs h1 {
-   font-size: 2.5rem;
-   margin-bottom: 20px;
- }
- 
- #aboutUs p {
-   font-size: 1rem;
-   
-   max-width: 800px;
-   margin: 0 auto;
- }
- 
- .about-info {
-  
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: left;
-   padding:0 2vw;
- }
- 
- .about-img {
-   width: 20rem;
-   height: 20rem;
-   padding-right : 4vw;
- 
- }
- 
- .about-img img {
-   width: 100%;
-   height: 100%;
-   border-radius: 20%;
-   object-fit: contain;
-  
- }
- 
- .about-info p {
-   font-size: 1.3rem;
-   margin: 0 3rem;
-   text-align: justify;
-   color : lightgray;
-   font-weight: 500;
- }
- 
- @media screen and (max-width: 940px){
- 
-  #bestOffers{
+  background: linear-gradient(360deg, #242b2e 0%, rgb(0, 0, 0) 100%);
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+
+#aboutUs h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#aboutUs p {
+  font-size: 1rem;
+
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 0 2vw;
+}
+
+.about-img {
+  width: 20rem;
+  height: 20rem;
+  padding-right: 4vw;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  object-fit: contain;
+}
+
+.about-info p {
+  font-size: 1.3rem;
+  margin: 0 3rem;
+  text-align: justify;
+  color: lightgray;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 940px) {
+  #bestOffers {
     margin-top: 10vw;
   }
-   #aboutUs{
-     display: none;
-   }
- }
+  #aboutUs {
+    display: none;
+  }
+}
 
 .listOfOffers {
   list-style: none;
@@ -364,8 +353,6 @@ section .bottomhr {
     height: 15vw;
   }
 
-  /* =========================== */
-
   .filtersTag {
     font-size: 1.4vw;
   }
@@ -384,8 +371,7 @@ section .bottomhr {
 }
 
 @media screen and (max-width: 576px) {
-
-  #bestOffers{
+  #bestOffers {
     margin-top: 15vw;
   }
   .sectionHeading {
@@ -402,11 +388,12 @@ section .bottomhr {
     height: 15vw;
   }
 }
-@media screen and (max-width: 340px){
-  #bestOffers{
+@media screen and (max-width: 340px) {
+  #bestOffers {
     margin-top: 25vw;
   }
-} 
+}
+/* ============ */
 
 /*------------------------Restraunts with food delivery -------------------------*/
 .Restaurants .container {
@@ -759,7 +746,6 @@ p {
   }
 
   .ShowMore {
-    
     margin-top: 10%;
     width: 83vw;
     font-size: 3vw;
@@ -1054,14 +1040,13 @@ p {
 }
 
 /* Deepa */
- .top-brands{ 
-  width: auto; 
-} 
+.top-brands {
+  width: auto;
+}
 
 .top-brands hr {
   width: 65%;
 }
-
 
 .top-brands .container {
   display: flex;
@@ -1071,7 +1056,6 @@ p {
   overflow-x: scroll;
   gap: 25px;
   padding-bottom: 50px;
-
 }
 
 .top-brands .container::-webkit-scrollbar {
@@ -1081,16 +1065,15 @@ p {
 
 /* Track */
 .top-brands .container::-webkit-scrollbar-track {
-  background: #5555557c; 
-  border-radius: 10px; 
-}
- 
-/* Handle */
-.top-brands .container::-webkit-scrollbar-thumb {
-  background: transparent; 
   background: #5555557c;
   border-radius: 10px;
-  
+}
+
+/* Handle */
+.top-brands .container::-webkit-scrollbar-thumb {
+  background: transparent;
+  background: #5555557c;
+  border-radius: 10px;
 }
 
 /* Handle */
@@ -1101,10 +1084,10 @@ p {
 
 /* Handle on hover */
 .top-brands .container::-webkit-scrollbar-thumb:hover {
-  background: #727171; 
+  background: #727171;
 }
 
-.top-brands .image img{
+.top-brands .image img {
   width: 23rem;
   background: #555;
 }
@@ -1191,7 +1174,6 @@ h5 {
   .top-brands .content p h5 {
     display: none;
   }
-
 }
 
 /* Deepa */
