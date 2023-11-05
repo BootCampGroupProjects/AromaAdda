@@ -9,7 +9,7 @@ body {
   /**/
   /**/
 
-  margin: 5% 0% 0% 0%;
+  margin: 4% 0% 0% 0%;
 }
 
 /* Navbar - Deepa */
@@ -254,19 +254,81 @@ section .bottomhr {
   display: inline;
 }
 
+ 
 #aboutUs {
-  font-size: 1.3vw;
-  font-family: "Zilla Slab", serif;
-  font-weight: 100;
-  text-align: justify;
-  padding-inline-start: 2.5em;
-  padding-inline-end: 2.5em;
-  line-height: 120%;
-}
 
-.aboutUsContent {
-  /*if needed*/
-}
+  /* background: rgb(231, 248, 229);*/
+   background: linear-gradient(360deg, rgb(66, 67, 66) 0%, rgb(0, 0, 0) 100%);
+   padding: 20px 0 20px 0;
+   text-align: center;
+   
+  /* width:89vw;
+   font-size: 1.3vw;
+   font-family: "Zilla Slab", serif;
+   font-weight: 100;
+   text-align: justify;
+   padding-inline-start: 2.5em;
+   padding-inline-end: 2.5em;
+   line-height: 120%; */
+ }
+ 
+ /*.about {
+   background: rgb(224, 251, 222);
+   background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+   padding: 100px 0 20px 0;
+   text-align: center;
+ }*/
+ 
+ #aboutUs h1 {
+   font-size: 2.5rem;
+   margin-bottom: 20px;
+ }
+ 
+ #aboutUs p {
+   font-size: 1rem;
+   
+   max-width: 800px;
+   margin: 0 auto;
+ }
+ 
+ .about-info {
+  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: left;
+   
+ }
+ 
+ .about-img {
+   width: 20rem;
+   height: 20rem;
+   padding-right : 4vw;
+ 
+ }
+ 
+ .about-img img {
+   width: 100%;
+   height: 100%;
+   border-radius: 20%;
+   object-fit: contain;
+  
+ }
+ 
+ .about-info p {
+   font-size: 1.3rem;
+   margin: 0 3rem;
+   text-align: justify;
+   color : lightgray;
+   font-weight: 500;
+ }
+ 
+ @media screen and (max-width: 940px){
+ 
+   #aboutUs{
+     display: none;
+   }
+ }
 
 .listOfOffers {
   list-style: none;
