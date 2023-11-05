@@ -40,13 +40,27 @@ section .bottomhr {
 .restaurnantsHeadingLine {
   width: 37% !important;
 }
-.contactHeadingLine{
+.contactHeadingLine {
   width: 65% !important;
 }
 
 .sectionHead h2 {
   width: 50%;
   display: inline;
+}
+
+#aboutUs {
+  font-size: 1.3vw;
+  font-family: "Zilla Slab", serif;
+  font-weight: 100;
+  text-align: justify;
+  padding-inline-start: 2.5em;
+  padding-inline-end: 2.5em;
+  line-height: 120%;
+}
+
+.aboutUsContent {
+  /*if needed*/
 }
 
 .listOfOffers {
@@ -301,7 +315,7 @@ p {
   font-size: 1vw;
   margin-top: 7px;
   font-weight: 100;
-  color :#999;
+  color: #999;
 }
 
 .Info {
@@ -426,25 +440,25 @@ p {
   .BottomLeft {
     padding: 0.3%;
     margin-left: -2%;
-    left : 10%;
+    left: 10%;
   }
 
-  .PlaceName{
+  .PlaceName {
     margin-top: 4vh;
   }
-  
+
   .PlaceName .FoodItems {
     height: 30px;
     font-size: 1.8vw;
     margin-top: 7px;
     font-weight: 100;
     color: #999;
-}
-   .StarIcon{
+  }
+  .StarIcon {
     font-size: 1.7vw;
-   }
+  }
 
-   .ShowMore {
+  .ShowMore {
     /* padding: 5px 650px;*/
     /*padding: 0 50vw;*/
     width: 89vw;
@@ -452,7 +466,7 @@ p {
     height: 30px;
     text-align: center;
   }
-  
+
   .ShowMoreBtn {
     width: 15%;
     font-size: 2.5vw;
@@ -469,52 +483,51 @@ p {
 
 @media screen and (max-width: 576px) {
   .RestaurantsList {
-    width : 83vw;
+    width: 83vw;
     grid-template-columns: repeat(1, 80%);
     justify-content: center;
-    
   }
-    .ListItem {
-      margin-bottom : 5%;
-    }
-  
-    .PlaceName{
-      margin-top: 4vh;
-    }
-    
-    .PlaceName .FoodItems {
-      height: 30px;
-      font-size: 2.3vw;
-      margin-top: 7px;
-      font-weight: 100;
-      color: #999;
+  .ListItem {
+    margin-bottom: 5%;
   }
-     .StarIcon{
-      font-size: 2.4vw;
-     }
-  
-     .ShowMore {
-      /* padding: 5px 650px;*/
-      /*padding: 0 50vw;*/
-      margin-top: 10%;
-      width: 83vw;
-      font-size: 3vw;
-      height: 5vh;
-      text-align: center;
-    }
-    
-    .ShowMoreBtn {
-      width: 20%;
-      font-size: 3vw;
-      border: none;
-      background-color: rgb(219, 219, 219);
-      color: black;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: 0.2s;
-      left: 50%;
-      padding: 0.5vw;
-    }
+
+  .PlaceName {
+    margin-top: 4vh;
+  }
+
+  .PlaceName .FoodItems {
+    height: 30px;
+    font-size: 2.3vw;
+    margin-top: 7px;
+    font-weight: 100;
+    color: #999;
+  }
+  .StarIcon {
+    font-size: 2.4vw;
+  }
+
+  .ShowMore {
+    /* padding: 5px 650px;*/
+    /*padding: 0 50vw;*/
+    margin-top: 10%;
+    width: 83vw;
+    font-size: 3vw;
+    height: 5vh;
+    text-align: center;
+  }
+
+  .ShowMoreBtn {
+    width: 20%;
+    font-size: 3vw;
+    border: none;
+    background-color: rgb(219, 219, 219);
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    left: 50%;
+    padding: 0.5vw;
+  }
 }
 
 /*Contact us section  */
@@ -537,14 +550,14 @@ p {
 
 #contact-detail input {
   display: inline;
-  border:none;
+  border: none;
   border-bottom: 2px solid white !important;
   background: inherit;
   outline: none;
   color: whitesmoke;
   width: auto;
   resize: none;
-  margin:0 1.5vw;
+  margin: 0 1.5vw;
   font-size: 1vw;
   height: 2vw;
 }
@@ -570,23 +583,24 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#contact-detail .emailInput{
+#contact-detail .emailInput {
   margin: 0 4vw;
   width: 16vw;
 }
-.name, .email{
+.name,
+.email {
   display: block;
   margin: 30px;
-  width:45vw;
+  width: 45vw;
 }
-.nameLabel{
+.nameLabel {
   font-family: sans-serif;
 }
-.emailLabel{
+.emailLabel {
   font-family: sans-serif;
   width: 5vw;
-  margin-top:5%;
-  left: 0.5vw!important;
+  margin-top: 5%;
+  left: 0.5vw !important;
 }
 
 #contact-detail button {
@@ -614,8 +628,8 @@ p {
   #form {
     width: 50vw;
   }
-  #contact-detail textarea{
-    margin-left:12vw;
+  #contact-detail textarea {
+    margin-left: 12vw;
   }
   #contact-detail button {
     padding: 6px;
@@ -630,8 +644,8 @@ p {
   #form {
     width: 50vw;
   }
-  #contact-detail textarea{
-    margin-left:13vw;
+  #contact-detail textarea {
+    margin-left: 13vw;
   }
   #contact-detail button {
     padding: 6px;
@@ -678,8 +692,8 @@ p {
   margin: 2vw;
 }
 
-.footerHeading{
-  margin:0 3vw;
+.footerHeading {
+  margin: 0 3vw;
 }
 
 .footerHeading ul li {
