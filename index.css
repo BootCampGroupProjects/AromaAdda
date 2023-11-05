@@ -170,7 +170,7 @@ body {
 }
 
 .navigation .toggle-btn #lightbox:target {
-  height: 30%;
+  height: 38vw;
   width: 96%;
   top: 7%;
   right: 3%;
@@ -189,6 +189,10 @@ body {
   .navigation .links{
     display: none;
   }
+
+  .navigation .toggle-btn #lightbox:target {
+    height: 38vw;
+  }
     
   
 }
@@ -202,6 +206,10 @@ body {
   }
   .navigation .links{
     display: none;
+  }
+
+  .navigation .toggle-btn #lightbox:target {
+    height: 50vw;
   }
 
 }
